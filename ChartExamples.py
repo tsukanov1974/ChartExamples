@@ -11,6 +11,10 @@ window = tk.Tk()
 window.geometry("450x450")
 window.title("Программа построения графиков")
 
+# Добавление метки заголовка
+lblTitle = tk.Label(text = "Примеры построения графиков", font = ('Helvetica', 16, 'bold'), fg = '#0000cc')
+lblTitle.place(x = 55, y = 25)
+
 # Добавление кнопки закрытия программы
 btnclose = tk.Button(window, text = "Закрыть", font = ('Helvetica', 10, 'bold'), command = do_close)
 btnclose.place(x = 330, y = 400, width = 90, height = 30)
